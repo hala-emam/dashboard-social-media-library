@@ -2,7 +2,7 @@ import React from 'react'
 import { IoIosSettings, IoMdHome } from 'react-icons/io'
 import { NavLink } from 'react-router-dom'
 import Users from './../../pages/Users/index';
-import { FaBookOpen, FaUserCircle } from 'react-icons/fa';
+import { FaBookOpen, FaUserCircle,FaRegNewspaper } from 'react-icons/fa';
 
 const Sidebar = () => {
   return (
@@ -13,7 +13,7 @@ const Sidebar = () => {
       </div>
       <ul className="text-secondary flex flex-col justify-center items-start gap-4 text-2xl font-semibold px-6">
         <NavLink
-          to="/home"
+          to="/"
           className={({ isActive }) =>
             isActive ? "active-link w-full" : "hover:w-full"
           }
@@ -75,7 +75,7 @@ const Sidebar = () => {
                 isActive ? "bg-secondary text-primary w-full" : ""
               }`}
             >
-              <FaBookOpen />
+               <FaRegNewspaper className="text-2xl" />
               <span className={isActive ? "text-primary" : ""}>Posts</span>
             </li>
           )}
