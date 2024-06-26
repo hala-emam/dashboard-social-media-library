@@ -11,7 +11,7 @@ function App() {
       path: '/',
       element: <PageLayout />,
       children: [
-        { path: 'home', element: <Home /> },
+        { path: '/', element: <Home /> },
         { path: 'users', element: <Users /> },
         { path: 'posts', element: <Posts /> },
         { path: 'books', element: <Books /> },
