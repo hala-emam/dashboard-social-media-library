@@ -3,7 +3,7 @@ import PageLayout from "./pages/PageLayout"
 import Home from "./pages/Home"
 import Users from './pages/Users/index';
 import Posts from './pages/Posts/index';
-import Books from './pages/Books/index';
+import Books from "./pages/Books";
 
 function App() {
   const router = createBrowserRouter([
